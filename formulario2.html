@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="post" action="index.js" enctype="multipart/form-data">
+       <fieldset>
+            <legend>Novell Services Login</legend>
+
+            <label for="nombre">Usemane</label><br>
+            <input type="text" name="nombre" id="nombre" required><br>
+
+            <label for="contra">password</label><br>
+            <input type="password" name="pass" id="contra" size="25" maxlength="50" required> <br>
+
+            <label for="city">City of employment</label><br>
+            <input type="text" name="city" id="city" size="25" maxlength="50" required> <br>
+            
+            <label for="servers">web server</label>
+            <select name="servers" id="servers">
+                <option value="arg">argentina</option>
+                <option value="chi">brasil</option>
+                <option value="uru">uruguay</option>
+            </select><br>        
+
+            <label >Please specify your role</label><br>
+
+            <input type="radio" name="role" value="role" id="admin">
+            <label for="admin">admin</label><br>
+
+            <input type="radio" name="role" value="role" id="engin">
+            <label for="engin">engineer</label><br>
+
+            
+            <input type="radio" name="role" value="role" id="manager">
+            <label for="manager">manager</label><br>
+
+            <input type="radio" name="role" value="role" id="gust">
+            <label for="gust">guest</label><br>
+
+
+
+
+            <label >Single Sign-on to the following</label> <br>
+
+            <input type="checkbox" name="sign" value="sign" id="mail">
+            <label for="mail">Mail</label><br>
+
+            <input type="checkbox" name="sign2" value="sign2" id="pay">
+            <label for="pay">Payroll</label><br>
+
+            
+            <input type="checkbox" name="sign3" value="sing3" id="self">
+            <label for="self">Self-service</label><br>
+
+
+         <input type="submit" name="Login" value="login" >
+
+         <input type="reset" name="reset" value="reset" >
+        </fieldset>
+        </form>
+</body>
+</html>
